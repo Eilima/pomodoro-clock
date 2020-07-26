@@ -6,7 +6,26 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  /* background-color: rgba(199, 197, 206, 0.322); */
+  background-color: rgb(236, 243, 250);
 }
 
+.clock-card {
+  /* background-color: rgb(60, 73, 119); */
+  background-color: rgb(137, 108, 175);
+  box-shadow: 0px 13px 40px -13px;
+  padding: 6rem 14rem 2rem 14rem;
+}
 
+.button-group {
+  color: blue;
+}
 
+.button-group button {
+  padding: .3em;
+  margin: .6em;
+}
+
+.control-group {
+  margin-bottom: 3em;
+}
