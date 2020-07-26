@@ -1,16 +1,27 @@
 import React from "react";
+import { Clock } from "./Clock";
+import { Controls } from "./Controls";
 
 export class Display extends React.Component {
+  state = {
+    minutes: 1500,
+    seconds: 60,
+  };
 
-    render() {
-        return (
-            <div className='clock-card' >
-                <p>Nisi nisi minim velit irure est consectetur consequat exercitation sunt adipisicing.</p>
-                <h1>00:00</h1>
-                <button>Start</button>
-                <button>Stop</button>
-                <button>Reset</button>
-            </div>
-        )
-    }
+  start = () => {
+    setInterval(() => {}, 1000);
+  };
+
+  render() {
+    return (
+      <div className="clock-card">
+        <div className="control-group">
+          {/* <button>UP</button> */}
+          <Clock />
+          {/* <button>DOWN</button> */}
+        </div>
+        <Controls />
+      </div>
+    );
+  }
 }
